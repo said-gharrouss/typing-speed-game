@@ -1,0 +1,148 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EEE2DE;
+    user-select: none;
+}
+
+.game-name{
+    background-color: #03a9f4;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-top: 0.5px;
+}
+.game-level ul{
+    list-style: none;
+    width: 150px;
+    position: absolute;
+}
+.game-level ul h2{
+    background-color: black;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+}
+.game-level ul li{
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.game-level ul .easy{
+    background-color: #00A9FF;
+}
+.game-level ul .noraml{
+    background-color: #009688;
+}
+.game-level ul .hard{
+    background-color: red;
+}
+.container{
+    width: 800px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.container .info-area{
+    background-color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+.container .info-area span{
+    color: blueviolet;
+}
+.container .info-area span::before{
+    content: "[ ";
+}
+.container .info-area span::after{
+    content: " ]";
+}
+.container .start-playing{
+    background-color: #009688;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.container input{
+    width: calc(100% - 43px);
+    padding: 10px 20px;
+    border: none;
+    text-transform: capitalize;
+}
+.container input:focus{
+    outline: 2px solid #03a9f4;
+    border-radius: 2px;
+}
+.container .words-area{
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.container .footer{
+    background-color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer .time span{
+    color:  red;
+    font-weight: bold;
+}
+.scoreArea span{
+    color: #009688;
+    font-weight: bold;
+}
+.game-over{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: red;
+    margin: 10px auto;
+    color: white;
+    display: none;
+}
+.congratz{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: blue;
+    margin: 10px auto;
+    color: white;
+    display: none;
+}
+.play-again{
+    border: none;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    display: none;
+    margin: 20px auto;
+
+}
+.word{
+    color: white;
+    background-color: #2196f3;
+    padding: 5px;
+    border-radius: 6px;
+}
+.btn-start-clicked{
+    background-color: transparent !important;
+    color: #2196f3 !important;
+    font-size: 30px !important;
+}
